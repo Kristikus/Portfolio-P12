@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    
+}
+
+/* body {
+    width: 100dvw;
+    height: 100dvh;
+} */
+
+:root {
+    --primary: #85D5C4;
+    --secondary: #D9F9ED;
+    --dark-text: #151515;
+    --clear-text: white;
+    --logo: #4F8EA3;
+    --font-size-min: 1.2rem;
+}
+
+.bk-primary {
+    background-color: var(--primary)
+}
+
+.btn {
+    background-color: #85D5C4;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    max-width: 10rem;
+    font-size: var(--font-size-min) ;
+}
+
+/* Nav */
+nav {
+    padding: 1.2rem;
+    display: flex;
+    height: 1.7rem;
+    gap: 2rem;
+    align-items: last baseline;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--dark-text);
+}
+
+@media screen and (max-width: 480px) {
+    .nav-hide{
+        display: none;
+    }
+}
+
+/* Presentation Section */
+.presentation-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 5rem 8rem;
+    gap: 5rem;
+}
+
+.presentation-img {
+    height: 14rem;
+}
+
+.presentation-img img {
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: var(--secondary);
+}
+
+.presentation-text {
+    max-width: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+.presentation-text p {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .presentation-wrapper {
+        margin: 2rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .presentation-img {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+/* Projects wrapper */
+.projects-container {
+    margin: 0 auto;
+    max-width: 1150px;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem 2rem;
+    margin: 5rem;
+}
+/**********************  penser à Nester ********************************/
+.projects-section {
+    display: flex;
+    gap: 1rem;
+    background-color: #D9F9ED;
+    border-radius: 10px;
+
+    padding: 1rem 1.5rem;
+    & p {
+        max-width: 55rem;
+        text-align: justify;
+    }
+}
+
+.projects-section:nth-child(even) {
+   flex-direction: row-reverse;
+}
+
+.projects-section-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.projects-section-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-title {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.projects-filter {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0rem;
+}
+
+.projects-skills-no-code {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.projects-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: var(--logo);
+}
+
+
+@media screen and (max-width: 480px) {
+    .projects {
+        margin: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .projects-section,
+    .projects-section:nth-child(even) {
+        flex-direction: column;
+    }
+    .projects-skills {
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-self: center;
+        & div {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: var(--logo);
+    padding: 0rem 0.5rem;
+    height: 2.7rem;
+    border-left: 0.8px solid var(--logo);
+    border-bottom-left-radius: 3px;
+}
+.logo-img {
+    height: 3rem;
+}
+
+.logo-icon {
+    color: var(--logo);
+    font-size: 2.6rem;
+}
+
+
+/* Cards */
+.card {
+    padding: 1rem;
+    width: 90%;
+    /* height: 20rem; */
+    border-radius: 0.7rem;
+    position: relative;
+    & h3 {
+        position: absolute;
+        top: 0rem;
+        color: var(--dark-text);
+
+    }   
+}
+
+.card-img {
+    border-radius: 0.7rem;
+    height: 95%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
