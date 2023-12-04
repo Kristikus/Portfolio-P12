@@ -29,6 +29,16 @@ const Nav = () => {
             activeClass='active'
             smooth
             spy
+            to='skills'
+            className='link'
+            href=''
+          >
+            Compétences
+          </Link>
+          <Link
+            activeClass='active'
+            smooth
+            spy
             to='contact'
             className='link'
             href=''

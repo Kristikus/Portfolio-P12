@@ -6,7 +6,7 @@ const SkillsSection = () => {
     ...new Set(projects.flatMap((project) => project.tech)),
   ]
   return (
-    <div>
+    <div id='skills'>
       <h2 className='title'>COMPETENCES</h2>
       <div className='skills'>
         {allSkills.map((skill, id) => {
