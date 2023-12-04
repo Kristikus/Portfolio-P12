@@ -3,23 +3,19 @@ import projects from '../data.json'
 import Skills from './Skills'
 import { useState } from 'react'
 
-const allSkills: string[] = [
-  ...new Set(projects.flatMap((project) => project.tech)),
-]
-
-const Projects: React.FC = () => {
+const Projects = () => {
   const languageSkills = ['React', 'Javascript', 'HTML5']
   const [categorySelected, setCategorySelected] = useState(projects)
 
   const filteredCategory = (techno: string) => {
-    const newTech = projects.filter((project) => {
+    const newTech = projects?.filter((project) => {
       return project.tech.includes(techno)
     })
     setCategorySelected(newTech)
   }
 
   const filteredOthersSkills = () => {
-    const test = projects.filter((project) => {
+    const test = projects?.filter((project) => {
       const otherSkills =
         project.tech.includes('Test') ||
         project.tech.includes('SEO') ||
@@ -30,40 +26,37 @@ const Projects: React.FC = () => {
   }
 
   return (
-    <div className='projects-container'>
-      <h2 className='projects-title' id='projects'>
-        PROJETS
-      </h2>
+    <div className='projects-container' id='projects'>
+      <h2 className='title'>PROJETS</h2>
       <div className='projects-filter'>
         {languageSkills.map((skill, id) => (
-          <div key={id}>
-            <button className='btn' onClick={() => filteredCategory(skill)}>
-              {skill}
-            </button>
-          </div>
+          <button
+            key={id}
+            className='btn'
+            onClick={() => filteredCategory(skill)}
+          >
+            {skill}
+          </button>
         ))}
         <button className='btn' onClick={filteredOthersSkills}>
-          Others
+          Autres
         </button>
         <button className='btn' onClick={() => setCategorySelected(projects)}>
-          All
+          Tous
         </button>
       </div>
       <div className='projects'>
         {categorySelected.map((project) => {
           return (
             <div key={project.id} className='projects-section'>
-              <Card
-                name={project.name}
-                src={project.image}
-                alt={project.name}
-              />
+              <Card src={project.image} alt={project.name} linkGithub={project.github} linkSite={project.demo}/>
               <div className='projects-section-description'>
                 <div>
+                  <h3>{project.name}</h3>
                   <p>{project.description}</p>
                 </div>
                 <div className='logo-wrapper'>
-                  {project.tech.map((techno, id) => {
+                  {project.tech.map((techno: string, id: number) => {
                     return <Skills key={id} tech={techno} />
                   })}
                 </div>
@@ -71,17 +64,6 @@ const Projects: React.FC = () => {
             </div>
           )
         })}
-        <h2 className='projects-title' id='skills'>
-          COMPETENCES
-        </h2>
-        <div className='projects-skills'>
-          {allSkills.map((skill, id) => {
-            return <Skills key={id} tech={skill} />
-          })}
-        </div>
-        <h2 className='projects-title' id='skills'>
-          CONTACT
-        </h2>
       </div>
     </div>
   )

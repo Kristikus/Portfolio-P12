@@ -8,7 +8,11 @@ import reduxIcon from '../assets/redux_icon.svg'
 import jsIcon from '../assets/js.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Skills: React.FC<{ tech: string }> = ({ tech }) => {
+type SkillsProps = {
+  tech: string
+}
+
+const Skills = ({ tech }: SkillsProps) => {
   const getIcons = () => {
     switch (tech) {
       case 'HTML5':
@@ -31,7 +35,7 @@ const Skills: React.FC<{ tech: string }> = ({ tech }) => {
       default:
         return (
           <div>
-            <p className='projects-skills-no-code'>{tech}</p>
+            <p className='skills-no-code'>{tech}</p>
           </div>
         )
     }

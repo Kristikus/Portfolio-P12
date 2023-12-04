@@ -1,66 +1,77 @@
 [
     {
         "name": "Booki",
-        "description": "Premier projet Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "Intégration de l'interface du site Booki en HTML et CSS, à partir d'une maquette réalisée par un UI designer, qui permet à l'utilisateur de trouver des hébergements et activités dans une ville de son choix.",
         "id": 1,
         "tech": ["HTML5", "CSS3"],
-        "image": "/src/assets/"
+        "image": "/images/booki.webp",
+        "github": "https://github.com/Kristikus/Booki"
     },
     {
         "name": "OhmyFood",
-        "description": "Second projet. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? ",
+        "description": "Intégration mobile first du site de la startup OhMyFood, avec Sass et quelques animations pour rendre le site plus attractif. L'utilisateur peut naviguer entre les menus proposés, puis composer son propre menu à réserver sur le site afin de limiter le temps d'attente.",
         "id": 2,
         "tech": ["Sass", "HTML5"],
-        "image": "/src/assets/funny-dog.jpeg"
+        "image": "/images/ohmyfood.webp",
+        "github": "https://github.com/Kristikus/Kristikus.github.io",
+        "demo": "https://kristikus.github.io"
     },
     {
         "name": "Print It",
-        "description": "Troisième projet At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.  ",
+        "description": "L'imprimerie familiale Print It a voulu dynamiser son site déjà existant en intégrant un caroussel interactif à l'aide de Javascript.",
         "id": 3,
         "tech": ["Javascript"],
-        "image": "/src/assets/"
+        "image": "/images/printit.webp",
+        "github": "https://github.com/Kristikus/Print-it-P5",
+        "demo": "https://kristikus.github.io/Print-it-P5/"
     },
     {
         "name": "Portfolio Sophie Bluel",
-        "description": "Quatrième projet At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.  ",
+        "description": "Trois tâches principales ont éte nécessaires pour le site portfolio de l'architecte d'intérieur Sophie Bluel. D'abord, il y a eu besoin de mettre en place une fonctionnalité de filtre par catégories des photos de l'architecte. Ensuite, pour qu'elle soit la seule à pouvoir ajouter, modifier ou supprimer un de ses travaux, une connexion sécurisée a été mise en place. Enfin, une modale a été créée pour lui permettre de modifier sa galerie de travaux.",
         "id": 4,
         "tech": ["Javascript"],
-        "image": "/src/assets/funny-dog.jpeg"
+        "image": "/images/sophiebluel.webp",
+        "github": "https://github.com/Kristikus/Portfolio-Sophie-Bluel-P6"
     },
     {
         "name": "Menu Maker By Qwenta",
-        "description": "Cinquième projet At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.  ",
+        "description": "Découverte de la méthodologie agile et de la gestion de projet en menant à bien la plannification du projet Menu Maker de Qwenta",
         "id": 5,
         "tech": ["Gestion projet"],
-        "image": "/src/assets/funny-dog.jpeg"
+        "image": "/images/menumaker.webp"
     },
     {
         "name": "Kasa",
-        "description": "Sixième projet. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? ",
+        "description": "Refonte du site web de l'agence immobilière Kasa, avec React pour le front-end et React router pour gérer les différentes routes du projet pour permettre de visualiser les annonces de logements.",
         "id": 6,
         "tech": ["React"],
-        "image": "/src/assets/funny-dog.jpeg"
+        "image": "/images/kasa.webp",
+        "github": "https://github.com/Kristikus/project_kasa"
     },
     {
         "name": "Nina Carducci",
-        "description": "Cinquième projet At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.  ",
+        "description": "Optimisation SEO du site en Javascript de la photographe Nina Carducci, grâce entre autres aux outils Lighthouse et Wave. Un rapport avec les résultats d'optimisation a été rédigé en se basant sur un audit Lighthouse pour les performances et Wave pour l'accessibilité.",
         "id": 7,
         "tech": ["SEO"],
-        "image": "/src/assets/js.svg"
+        "image": "/images/ninacarducci.webp",
+        "github": "https://github.com/Kristikus/SEO-P9",
+        "demo": "https://kristikus.github.io/SEO-P9/"
     },
     {
         "name": "724events",
-        "description": "Cinquième projet At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.  ",
+        "description": "Débogage du code du site de l'agence événementielle 724events pour rendre le site entièrement fonctionnel et agréable à la navigation. Quelques tests unitaires simples ont également été réalisés, accompagnés d'un cahier de recettes regroupant les scénarios utilisateurs au bon fonctionnement du site.",
         "id": 8,
         "tech": ["Test"],
-        "image": "/src/assets/funny-dog.jpeg"
+        "image": "/images/724events.webp",
+        "github": "https://github.com/Kristikus/Debug-P10"
     },
     {
         "name": "ArgentBank",
-        "description": "Cinquième projet At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.  ",
+        "description": "Réalisation de la connexion uilisateur du front-end du site React d'ArgentBank. Utilisation anticipée de Redux pour gérer le state global de l'application, en particulier pour les données futures des transactions.",
         "id": 9,
         "tech": ["React", "Redux"],
-        "image": "/src/assets/"
+        "image": "/images/argentbank.webp",
+        "github": "https://github.com/Kristikus/ArgentBank-P11"
     }
 ]
   
