@@ -31,6 +31,7 @@ const Contact = () => {
       .send('service_81a5b06', 'template_nsejiwj', params, '1mGjZLON_eoYPlnnJ')
       .then((response) => {
         console.log(response)
+        alert('Formulaire bien envoyé ! ')
       })
       .catch((error) => console.log(error))
     reset()

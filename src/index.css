@@ -123,6 +123,7 @@ nav {
         height: 14rem;
         & img {
             height: 100%;
+            width: 14rem;
             border-radius: 50%;
             object-fit: cover;
             background-color: var(--secondary);
@@ -421,7 +422,7 @@ nav {
         }
         .error {
             color: red;
-        }  
+        }
     }
 }
 
