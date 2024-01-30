@@ -1,5 +1,6 @@
 import { SubmitHandler, useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser'
+// import reCAPTCHA from "react-google-recaptcha"
 
 type FormData = {
   name: string
@@ -81,7 +82,13 @@ const Contact = () => {
             Veuillez laisser un message
           </p>
         )}
-        <input className='btn input-submit' type='submit' value='Envoyer' />
+        <input
+          className='btn input-submit'
+          type='submit'
+          value='Envoyer'
+          data-sitekey='6Lfpei0pAAAAAOKpgtqlHcX-CBZF0PX4q33zxn5k'
+          data-callback='onSubmit'
+        />
       </form>
     </div>
   )

@@ -5,7 +5,8 @@
         "id": 1,
         "tech": ["HTML5", "CSS3"],
         "image": "/images/booki.webp",
-        "github": "https://github.com/Kristikus/Booki"
+        "github": "https://github.com/Kristikus/Booki",
+        "demo": "https://kristikus.github.io/Booki/"
     },
     {
         "name": "OhmyFood",
