@@ -1,5 +1,5 @@
-import { Link } from 'react-scroll'
-import dog from '../assets/funny-dog.webp'
+import { Link } from 'react-scroll';
+import dog from '../assets/funny-dog.webp';
 
 const Presentation = () => {
   return (
@@ -14,7 +14,8 @@ const Presentation = () => {
           en Javascript et React sont là pour vous ! Ayant découvert le
           développement web pendant un job d'été et curieuse d'en apprendre
           davantage, je me suis lancée dans une formation de développeur
-          intégrateur web.
+          intégrateur web. Je suis également passée par une POEI développeur
+          front-end pour approfondir mes compétences.
         </p>
         <Link
           activeClass='active'
@@ -28,7 +29,7 @@ const Presentation = () => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Presentation
+export default Presentation;

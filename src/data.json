@@ -73,6 +73,14 @@
         "tech": ["React", "Redux"],
         "image": "/images/argentbank.webp",
         "github": "https://github.com/Kristikus/ArgentBank-P11"
+    },
+    {
+        "name": "Foodplanner",
+        "description": "Planificateur de repas, où l'utilisateur peut s'inscrire et se connecter, générer des recettes aléatoires dans un planning hebdomadaire, filtrer des recettes selon certaines catégories et accéder aux détails des recettes. Contexte agile, gestion de git et github en groupe.",
+        "id": 10,
+        "tech": ["Javascript", "HTML5", "CSS3", "Bootstrap"],
+        "image": "/images/foodplanner-1.webp",
+        "github": "https://github.com/Kristikus/foodplanner"
     }
 ]
   
