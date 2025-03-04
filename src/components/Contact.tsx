@@ -29,9 +29,8 @@ const Contact = () => {
       message: data.message,
     }
     emailjs
-      .send('service_81a5b06', 'template_nsejiwj', params, 'QI9fhbzGl540t6aq1')
-      .then((response) => {
-        console.log(response)
+      .send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, params, import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
+      .then(() => {
         alert('Formulaire bien envoyé ! ')
       })
       .catch((error) => console.log(error))
@@ -86,8 +85,6 @@ const Contact = () => {
           className='btn input-submit'
           type='submit'
           value='Envoyer'
-          data-sitekey='6Lfpei0pAAAAAOKpgtqlHcX-CBZF0PX4q33zxn5k'
-          data-callback='onSubmit'
         />
       </form>
     </div>
